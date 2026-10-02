@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://spelling-detective.enjoy-onepage.com/sitemap.xml

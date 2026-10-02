@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>받아쓰기 맞춤법 탐정단 | 초등 필수 어휘 & 띄어쓰기 클리닉</title>
+  <meta name="description" content="문장 속 잘못된 맞춤법과 띄어쓰기를 돋보기로 직접 찾아내어 올바른 어휘 카드로 교정하는 인터랙티브 초등 어휘력 클리닉입니다.">
+  <link rel="canonical" href="https://spelling-detective.enjoy-onepage.com/">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1204958742918459" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header Banner (Max 90px Clamped) -->
+  <aside class="ad-top-wrapper" aria-label="스폰서 링크">
+    <div class="ad-top-box">
+      <ins class="adsbygoogle"
+           style="display:block; max-height:90px;"
+           data-ad-client="ca-pub-1204958742918459"
+           data-ad-slot="3824727725"
+           data-ad-format="horizontal"
+           data-full-width-responsive="false"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </aside>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <span class="brand-badge">초등 국어 인터랙티브 2.3</span>
+        <h1 class="app-title">받아쓰기 맞춤법 탐정단</h1>
+      </div>
+      <p class="app-subtitle">돋보기로 찾아내는 빈출 오답 맞춤법 교정 & 표준 발음 낭독</p>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Progress Bar -->
+    <div class="detective-hud">
+      <div class="hud-case">
+        <span class="hud-label">수사 사건</span>
+        <span class="hud-val" id="caseTitle">사건 파일 #1</span>
+      </div>
+      <div class="hud-badge">
+        <span class="hud-label">탐정 랭크</span>
+        <span class="badge-tag" id="detectiveRank">수습 탐정 🔍</span>
+      </div>
+      <div class="hud-score">
+        <span class="hud-label">해결 사건</span>
+        <span class="hud-val score" id="solvedCount">0 / 10</span>
+      </div>
+    </div>
+
+    <!-- Investigation Card -->
+    <section class="case-card">
+      <div class="case-header">
+        <span class="case-type">용의 문장 분석</span>
+        <span class="case-hint">밑줄 친 의심 어절을 터치하여 올바른 카드를 선택하세요!</span>
+      </div>
+      <div class="sentence-stage" id="sentenceStage">
+        <!-- Interactive Tokens Rendered Here -->
+      </div>
+      <div class="voice-actions">
+        <button class="voice-btn" id="btnSpeak">표준 발음 듣기 🔊</button>
+      </div>
+    </section>
+
+    <!-- Inspection Modal / Sheet -->
+    <div class="inspect-sheet hidden" id="inspectSheet">
+      <div class="sheet-content">
+        <div class="sheet-header">
+          <span class="magnifier-icon">🔍</span>
+          <span class="sheet-title" id="sheetWord">의심 어절: 십다고</span>
+        </div>
+        <p class="sheet-guide">올바른 맞춤법 카드를 선택해 도장을 찍으세요:</p>
+        <div class="options-grid" id="optionsGrid"></div>
+        <div class="rule-box hidden" id="ruleBox">
+          <div class="rule-title">국립국어원 표준 해설</div>
+          <p class="rule-text" id="ruleText"></p>
+        </div>
+        <button class="action-btn secondary full" id="btnCloseSheet">닫기</button>
+      </div>
+    </div>
+
+    <!-- Navigation & Next Case -->
+    <div class="case-nav-row">
+      <button class="action-btn secondary" id="btnPrevCase">이전 사건</button>
+      <button class="action-btn primary" id="btnNextCase">다음 사건으로 이동</button>
+    </div>
+
+    <!-- In-Article Ad -->
+    <aside class="ad-mid-wrapper" aria-label="스폰서 링크">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1204958742918459"
+           data-ad-slot="1186914926"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </aside>
+
+    <!-- Guide Card -->
+    <section class="edu-card">
+      <h2>초등 빈출 표음주의 오류란?</h2>
+      <p>'소리 나는 대로 쓰기'는 초등 저학년 및 성인 수험생에게 가장 흔한 오류입니다. '십다고(X) → 싶다고(O)', '어떻해(X) → 어떡해(O)'처럼 발음과 표기의 괴리를 인지하고 원형 형태소를 밝혀 적는 능동적 오류 탐색 훈련이 필수적입니다.</p>
+    </section>
+  </main>
+
+  <!-- Multiplex Footer Ad -->
+  <aside class="ad-bot-wrapper" aria-label="스폰서 추천">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1204958742918459"
+         data-ad-slot="3416334507"
+         data-ad-format="autorelaxed"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </aside>
+
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <p class="copyright">© 2026 받아쓰기 맞춤법 탐정단. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="about.html">도구 소개</a>
+        <a href="privacy.html">개인정보처리방침</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
